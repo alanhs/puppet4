@@ -1,0 +1,9 @@
+classes:
+  - rabbitmq
+
+rabbitmq::service_manage: true
+rabbitmq::port: 5672
+rabbitmq::delete_guest_user: true
+rabbitmq::package_ensure: latest
+rabbitmq::manage_repos: true
+rabbitmq::repos_ensure: true

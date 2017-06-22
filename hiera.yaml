@@ -1,0 +1,9 @@
+---
+:backends:
+  - yaml
+:hierarchy:
+  - "%{::environment}/hiera/%{::fqdn}"
+  - "%{::environment}/hiera/%{::environment}"
+  - "%{::environment}/hiera/common"
+:yaml:
+  :datadir: /etc/puppetlabs/code/environments/
