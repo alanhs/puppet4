@@ -5,9 +5,6 @@ classes:
 rabbitmq::service_manage: true
 rabbitmq::port: 5672
 rabbitmq::delete_guest_user: true
-rabbitmq::package_ensure: latest
-rabbitmq::manage_repos: true
-rabbitmq::repos_ensure: true
 redis::bind: ${::ipaddress}
 redis::manage_repo: true
 redis::manage_package: true
