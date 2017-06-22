@@ -1,4 +1,3 @@
----
 # Common file used by hiera.
 # All the configuration in here can be thought of as the fall back configuration
 # if better configuration can not be found.
