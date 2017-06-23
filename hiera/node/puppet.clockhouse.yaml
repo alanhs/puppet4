@@ -5,3 +5,6 @@ sensu::server: false
 sensu::extensions:
   'system':
     source: 'puppet:///modules/supervision/system_profile.rb'
+sensu::rabbitmq_password: yEPxFRfg9EhcNVYe
+sensu::rabbitmq_user: mquser
+sensu::rabbitmq_host: sensu.clockhouse
