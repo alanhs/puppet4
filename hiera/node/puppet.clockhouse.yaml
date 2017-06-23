@@ -1,0 +1,7 @@
+---
+sensu::subscriptions:
+    - all
+sensu::server: false
+sensu::extensions:
+  'system':
+    source: 'puppet:///modules/supervision/system_profile.rb'
