@@ -1,6 +1,7 @@
 classes:
   - rabbitmq
   - redis
+  - sensu
 
 rabbitmq::service_manage: true
 rabbitmq::port: 5672
@@ -8,3 +9,8 @@ rabbitmq::delete_guest_user: true
 redis::bind: ${::ipaddress}
 redis::manage_repo: true
 redis::manage_package: true
+sensu::server: true
+sensu::api: true
+sensu::plugins
+  - 'puppet:///data/sensu/plugins/ntp.rb',
+  - 'puppet:///data/sensu/plugins/postfix.rb'
