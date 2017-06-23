@@ -2,15 +2,22 @@ classes:
   - rabbitmq
   - redis
   - sensu
+  - uchiwa
 
 rabbitmq::service_manage: true
 rabbitmq::port: 5672
 rabbitmq::delete_guest_user: true
-redis::bind: ${::ipaddress}
+redis::bind: 192.168.2.131 
 redis::manage_repo: true
 redis::manage_package: true
 sensu::server: true
 sensu::api: true
-sensu::plugins
-  - 'puppet:///data/sensu/plugins/ntp.rb',
-  - 'puppet:///data/sensu/plugins/postfix.rb'
+#sensu::plugins:
+#  - 'puppet:///data/sensu/plugins/ntp.rb'
+#  - 'puppet:///data/sensu/plugins/postfix.rb'
+uchiwa::name: sensu
+uchiwa::host: 127.0.0.1
+uchiwa::ssl: flase
+uchiwa::user: sensu
+uchiwa::pass: sensu
+
