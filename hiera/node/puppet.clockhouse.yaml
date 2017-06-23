@@ -1,4 +1,6 @@
----
+classes:
+  - sensu
+
 sensu::subscriptions:
     - all
 sensu::server: false
