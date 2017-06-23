@@ -7,7 +7,7 @@ classes:
 rabbitmq::service_manage: true
 rabbitmq::port: 5672
 rabbitmq::delete_guest_user: true
-redis::bind: 192.168.2.131 
+redis::bind: 127.0.0.1
 redis::manage_repo: true
 redis::manage_package: true
 sensu::server: true
