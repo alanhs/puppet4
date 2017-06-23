@@ -12,6 +12,8 @@ redis::manage_repo: true
 redis::manage_package: true
 sensu::server: true
 sensu::api: true
+sensu::rabbitmq_user: mquser
+sensu::rabbitmq_password: yEPxFRfg9EhcNVYe
 #sensu::plugins:
 #  - 'puppet:///data/sensu/plugins/ntp.rb'
 #  - 'puppet:///data/sensu/plugins/postfix.rb'
