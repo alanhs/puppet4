@@ -15,3 +15,6 @@ ntp::servers:
   - 2.au.oceania.pool.ntp.org
   - 3.au.oceania.pool.ntp.org
 
+rabbitmq::default_user: mquser
+rabbitmq::default_pass: yEPxFRfg9EhcNVYe
+

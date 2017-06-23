@@ -16,8 +16,6 @@ sensu::api: true
 #  - 'puppet:///data/sensu/plugins/ntp.rb'
 #  - 'puppet:///data/sensu/plugins/postfix.rb'
 uchiwa::name: sensu
-uchiwa::host: 127.0.0.1
-uchiwa::ssl: flase
-uchiwa::user: sensu
-uchiwa::pass: sensu
+uchiwa::user: admin
+uchiwa::pass: secret
 
