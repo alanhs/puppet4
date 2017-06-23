@@ -18,4 +18,8 @@ sensu::api: true
 uchiwa::name: sensu
 uchiwa::user: admin
 uchiwa::pass: secret
-
+sysctl::base::values:
+  vm.overcommit_memory:
+    value: '1'
+  vm.swappiness:
+    ensure: absent
